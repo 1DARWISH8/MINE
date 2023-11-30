@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:ital,wght@0,600;1,400;1,500&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F37F7F;
 }
 
 body {
@@ -10,13 +13,36 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #F37F7F;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F37F7F;
+    overflow: hidden;
 }
+.wrapper{
+        /* background: url() repeat ; */
+        background-size: contain;
+}
+
+/* .hearts{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(155%,-150%);
+    display: none;
+} */
+/* .container:hover .heart{
+    display: block;
+} */
+
+/* .heart-gif{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    pointer-events: none;
+    display: block;
+} */
 
 .container{
     width: 400px;
-    height: 350px;
+    height: 340px;
     overflow: hidden;
 }
 
@@ -24,17 +50,21 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    align-items: center;
 }
 .nova{
 position:absolute;
 top: 50%;
 left: 50%;
-transform: translate(135%,-150%);
-background-color: rgb(5, 170, 79);
+transform: translate(155%,-150%);
+background: transparent;
 padding: 10px;
 border: 1px solid rgb(0, 0, 0);
 border-radius: 20px;
 display: none;
+font-family: 'Caveat', cursive;
+font-size: 1.5rem;
+font-weight: bolder
 }
 .container:hover .nova{
     display: block;
@@ -42,14 +72,16 @@ display: none;
 h1{
     text-align: center;
     font-size: 2.5em;
-    color: #d40e1b;
+    color: #7d1918;
     margin: 15px 0;
+    background: transparent;
 }
 h2 {
     text-align: center;
     font-size: 1.5em;
-    color: #5c1d21;
+    color: #f5f5dc;
     margin: 15px 0;
+    background: transparent;
 }
 .btn-group {
     width: 100%;
@@ -57,6 +89,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    background: transparent;
 }
 button {
     position: absolute;
@@ -73,10 +106,10 @@ button {
 }
 button:nth-child(1) {
     margin-left: -200px;
-    background: #e94d58;
+    background-color: #e94d58;
 }
 button:nth-child(2) {
     margin-right: -200px;
-    background: white;
+    background-color: white;
     color: #e94d58;
 }
