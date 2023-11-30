@@ -114,8 +114,8 @@ button:nth-child(2) {
     color: #e94d58;
 }
 
-@media only screen and (min-width:601px){
+/* @media only screen and (min-width:601px){
  .nova{
  transform: translate(100%,-100%);
  }
-}
+} */
